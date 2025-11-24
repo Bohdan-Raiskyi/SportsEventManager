@@ -13,6 +13,8 @@ public class SportsDbContext : DbContext
     public DbSet<Athlete> Athletes { get; set; }
     public DbSet<Team> Teams { get; set; }
 
+    public DbSet<MatchLog> MatchLogs { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

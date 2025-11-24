@@ -25,5 +25,7 @@ namespace SportsEventManager.Models
 
         [Column("updated_by_user_id")]
         public long? UpdatedByUserId { get; set; }
+
+        public List<MatchLog> MatchLogs { get; set; } = new();
     }
 }
